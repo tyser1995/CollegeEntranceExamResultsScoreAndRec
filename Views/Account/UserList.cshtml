@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User</h2>
+
+<div class="card">
+    <!-- /.card-header -->
+    <div class="card-body">
+        <input type="hidden" class="form-control" id="txtID" value="0">
+        <label>Email</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="txtEmail" data-inputmask="'alias': 'email'"  data-mask>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-edit"></span>
+                </div>
+            </div>
+        </div>
+        <label>Password</label>
+        <div class="input-group mb-3">
+            <input type="password" class="form-control" id="txtPassword">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-edit"></span>
+                </div>
+            </div>
+        </div>
+        <label>Role</label>
+        <div class="input-group mb-3">
+            <select class="form-control" id="drpRole">
+                <option disabled selected hidden value="0">Choose Role</option>
+                <option value="Admin">Admin</option>
+                <option value="Guidance">Guidance</option>
+                <option value="Program">Program</option>
+                <option value="Registrar">Registrar</option>
+            </select>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-edit"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <button id="btnSave" type="button" class="btn btn-success mr-2">Save</button>
+            <button id="btnCancel" type="button" class="btn btn-danger d-none">Cancel</button>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<div class="card">
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="dataTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>No</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+
+<script src="~/Scripts/Functions/UserValidation.js"></script>
+<script src="~/Scripts/Functions/User.js"></script>
+<script>
+    $(function () {
+        $('[data-mask]').inputmask();
+    });
+</script>

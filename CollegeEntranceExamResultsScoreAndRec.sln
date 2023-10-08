@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollegeEntranceExamResultsScoreAndRec", "CollegeEntranceExamResultsScoreAndRec.csproj", "{F9800F2D-6112-41E9-8D29-88261E6E6695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UADAL", "..\UADAL\UADAL.csproj", "{F723595F-C160-4113-B1B0-AA9290DF6513}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9800F2D-6112-41E9-8D29-88261E6E6695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9800F2D-6112-41E9-8D29-88261E6E6695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9800F2D-6112-41E9-8D29-88261E6E6695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9800F2D-6112-41E9-8D29-88261E6E6695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F723595F-C160-4113-B1B0-AA9290DF6513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F723595F-C160-4113-B1B0-AA9290DF6513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F723595F-C160-4113-B1B0-AA9290DF6513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F723595F-C160-4113-B1B0-AA9290DF6513}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB991FFC-DBF5-441A-957F-6E94F6BEB8FA}
+	EndGlobalSection
+EndGlobal

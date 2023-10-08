@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Programs";
+    Layout = "~/Views/Shared/_MainLayoutLogin.cshtml";
+}
+
+<div class="login-box" style="width: 500px">
+    <div class="login-logo mt-5">
+        @*@Html.ActionLink("UA Web Application", "Index", "Account", null, new { @class = "text-center" })*@
+        <a href="#!">UA Web Application</a>
+    </div>
+    <div class="card">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Program Choice</p>
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            <th>Course Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                             <th></th>
+                            <th>Course Name</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-8">
+
+                </div>
+                <div class="col-4">
+                    <button id="btnNext" type="button" class="btn btn-primary w-100">Next</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.form-box -->
+    </div>
+    <!-- Include optional progressbar HTML -->
+    <div class="verify_bar row d-none">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Functions/ProgramValidation.js"></script>
+<script src="~/Scripts/Functions/Program.js"></script>

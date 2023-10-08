@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "EnrolleeType";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enrollee Type</h2>
+
+<div class="card">
+    <!-- /.card-header -->
+    <div class="card-body">
+        <input type="hidden" class="form-control" id="txtID" value="0">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="txtYearLevelInNo" placeholder="Year Level No" data-inputmask='"mask": "99"' data-mask>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-edit"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="txtYearLevelInName" placeholder="Year Level Name">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-edit"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <button id="btnSave" type="button" class="btn btn-success mr-2">Save</button>
+            <button id="btnCancel" type="button" class="btn btn-danger d-none">Cancel</button>
+        </div>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<div class="card">
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="dataTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Year Level Name</th>
+                    <th>Year Level No</th>
+                    <th>Created Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>Year Level Name</th>
+                    <th>Year Level No</th>
+                    <th>Created Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<script>
+    $(function () {
+        $('[data-mask]').inputmask();
+    });
+</script>
+<script src="~/Scripts/Functions/EnrolleeTypeValidation.js"></script>
+<script src="~/Scripts/Functions/EnrolleeType.js"></script>

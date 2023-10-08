@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_MainLayoutLogin.cshtml";
+}
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="#login">College Entrance Examination and UA Web Application</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+
+            <div class="input-group mb-3">
+                <input type="text" id="txtUsername" class="form-control" placeholder="Username" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" id="txtPassword" class="form-control" placeholder="Password" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_bar row">
+                <div class="col-8">
+                    @*<p class="mb-1">
+                            <a href="forgot-password.html">I forgot my password</a>
+                        </p>*@
+                    <p class="mb-0">
+                        @Html.ActionLink("Register a new membership", "Registration", "Account", null, new { @class = "text-center" })
+                    </p>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </div>
+                <!-- /.col -->
+            </div>
+            <div class="verify_bar row d-none">
+                <div class="progress col-12">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+            </div>
+            <!-- /.social-auth-links -->
+
+        </div>
+        <!-- /.login-card-body -->
+    </div>
+
+</div>
+<!-- /.login-box -->
+
+<script>
+    $(function () {
+        //const settings = {
+        //    async: true,
+        //    crossDomain: true,
+        //    url: 'https://clicksend.p.rapidapi.com/sms/send',
+        //    method: 'POST',
+        //    headers: {
+        //        'content-type': 'application/json',
+        //        Authorization: 'Basic cmVzdHlnYWxpZG8wNUBnbWFpbC5jb206IUFkbWluMTEyOCo=',
+        //        'Content-Type': 'application/json',
+        //        'X-RapidAPI-Key': 'a17a86f539msh1a6f11a9726d295p1485ebjsn9e280dab8d96',
+        //        'X-RapidAPI-Host': 'clicksend.p.rapidapi.com'
+        //    },
+        //    processData: false,
+        //    data: '{\n  "messages": [\n    {\n      "source": "mashape",\n      "from": "Test",\n      "body": "This is a test",\n      "to": "+639778877083",\n      "schedule": "1452244637",\n      "custom_string": "this is a test"\n    }\n  ]\n}'
+        //};
+
+        //$.ajax(settings).done(function (response) {
+        //    console.log(response);
+        //});
+    });
+</script>
+<script src="~/Scripts/Functions/AccountValidation.js"></script>
+<script src="~/Scripts/Functions/Account.js"></script>

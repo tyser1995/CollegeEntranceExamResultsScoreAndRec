@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Item";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Item</h2>
+
+
+<div class="card">
+    <div class="card">
+        <!-- /.card-header -->
+        <div class="card-body">
+            <input type="hidden" class="form-control" id="txtID" value="0">
+            <div class="input-group mb-3">
+                <select class="form-control" id="drpSubjAssessmentID">
+                    <option selected disabled value="0">Select Course</option>
+                </select>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="txtItemQuestion" placeholder="Question">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="txtItemChoicesA" placeholder="Item A">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="txtItemChoicesB" placeholder="Item B">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="txtItemChoicesC" placeholder="Item C">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="txtItemChoicesD" placeholder="Item D">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <select class="form-control" id="drpItemAnswer">
+                    <option selected disabled value="0">Select the Correct Answer</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <button id="btnSave" type="button" class="btn btn-success mr-2">Save</button>
+                <button id="btnCancel" type="button" class="btn btn-danger d-none">Cancel</button>
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="dataTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Subject</th>
+                    <th>Question</th>
+                    <th>Item A</th>
+                    <th>Item B</th>
+                    <th>Item C</th>
+                    <th>Item D</th>
+                    <th>Answer</th>
+                    <th>Created Date</th>
+                    @*<th>Action</th>*@
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>Subject</th>
+                    <th>Question</th>
+                    <th>Item A</th>
+                    <th>Item B</th>
+                    <th>Item C</th>
+                    <th>Item D</th>
+                    <th>Answer</th>
+                    <th>Created Date</th>
+                    @*<th>Action</th>*@
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<script src="~/Scripts/Functions/ItemValidation.js"></script>
+<script src="~/Scripts/Functions/Item.js"></script>
